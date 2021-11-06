@@ -24,7 +24,6 @@
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
         android:autofillHints="" />
@@ -39,8 +38,10 @@
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintVertical_bias=".25"
         tools:layout_editor_absoluteY="344dp"
         android:autofillHints="" />
 
@@ -61,7 +62,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="TODO"
@@ -69,11 +70,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.359"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.35"
         app:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -81,6 +83,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/logoImage"
+        app:layout_constraintVertical_bias=".7"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
