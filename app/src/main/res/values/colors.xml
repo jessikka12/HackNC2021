@@ -3,7 +3,8 @@
     <color name="c1_gold">#FFCC33</color>
     <color name="grey">#4A4848</color>
     <color name="black">#000000</color>
-    <color name="green">#597E2F</color>
+    <color name="emerald">#092C0A</color>
+    <color name="teal_200">#092C0A</color>
     <color name="c2_brown">#33241D</color>
     <color name="white">#FFFFFF</color>
 </resources>
