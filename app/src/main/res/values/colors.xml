@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="gold">#FFCC33</color>
+    <color name="c1_gold">#FFCC33</color>
     <color name="grey">#4A4848</color>
     <color name="black">#000000</color>
     <color name="green">#597E2F</color>
-    <color name="brown">#33241D</color>
+    <color name="c2_brown">#33241D</color>
     <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
 </resources>
