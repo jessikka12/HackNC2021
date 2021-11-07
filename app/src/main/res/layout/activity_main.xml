@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginBottom="4dp"
+        app:backgroundTint="@color/indigo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -39,5 +40,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchBar" />
+
+    <Switch
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        android:id="@+id/day_night_mode"
+        android:layout_width="119dp"
+        android:layout_height="49dp"
+        android:background="#001A025C"
+        android:text="DAY"
+        android:textColor="@color/lavender"
+        android:textColorHighlight="@color/lavender"
+        android:textColorHint="@color/lavender"
+        android:textColorLink="@color/lavender"
+        android:textOff="NIGHT"
+        android:textOn="DAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
