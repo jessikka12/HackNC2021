@@ -42,7 +42,9 @@
         android:layout_marginRight="183dp"
         android:layout_marginBottom="36dp"
         android:clickable="true"
+        android:contentDescription="@string/todo"
         android:cropToPadding="false"
+        android:focusable="true"
         android:scaleX="2"
         android:scaleY="2"
         app:backgroundTint="@color/lavender"
@@ -51,18 +53,16 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bottomAppBar2"
-        app:layout_constraintVertical_bias="0.785"
+        app:layout_constraintVertical_bias="1.0"
         app:rippleColor="@color/indigo"
         app:srcCompat="@android:drawable/ic_input_add"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/todo"
-        android:focusable="true" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Switch
         android:id="@+id/day_night_mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="800dp"
         android:layout_marginBottom="19dp"
         android:minHeight="48dp"
         android:text="@string/day"
@@ -72,8 +72,8 @@
         android:textColorLink="@color/lavender"
         app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar2"
         app:layout_constraintEnd_toEndOf="@+id/bottomAppBar2"
-        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subscriptionList"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
 </androidx.constraintlayout.widget.ConstraintLayout>
