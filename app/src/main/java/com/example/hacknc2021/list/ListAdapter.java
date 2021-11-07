@@ -18,10 +18,12 @@ import java.util.List;
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     static class ViewHolder extends RecyclerView.ViewHolder{
         TextView titleTextView;
+        TextView amountTextView;
 
         ViewHolder(final View itemView){
             super(itemView);
             titleTextView = itemView.findViewById(R.id.listTitle);
+            amountTextView = itemView.findViewById(R.id.listAmount);
         }
     }
 
@@ -47,6 +49,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         //sets title
         TextView nameTextView = holder.titleTextView;
         nameTextView.setText(listItem._title);
+        //sets amount
+        TextView amountTextView = holder.amountTextView;
+        if (listItem._amount > 0){
+            amountTextView.setText(listItem._amount + "");
+        }
     }
 
     @Override

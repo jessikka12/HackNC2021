@@ -33,6 +33,11 @@ public class ListActivity extends AppCompatActivity {
         plusButton = findViewById(R.id.plusButton);
         day_night_mode = findViewById(R.id.day_night_mode);
 
+        subscriptions.add("Netflix..........13.99");
+        subscriptions.add("Amazon...........6.49");
+        subscriptions.add("Yahoo...........25.00");
+        subscriptions.add("Hulu............12.99");
+
         List<ListItem> subs = ListItem.createList(subscriptions);
         subList.setAdapter(new ListAdapter(subs));
         subList.setLayoutManager(new LinearLayoutManager(this));
@@ -52,6 +57,7 @@ public class ListActivity extends AppCompatActivity {
                     {
                         if (day_night_mode.isChecked()) {
                             day_night_mode.setText("DAY");
+                            subscriptions.clear();
                             AppCompatDelegate
                                     .setDefaultNightMode(
                                             AppCompatDelegate
@@ -59,6 +65,7 @@ public class ListActivity extends AppCompatActivity {
                         }
                         else {
                             day_night_mode.setText("NIGHT");
+                            subscriptions.clear();
                             AppCompatDelegate
                                     .setDefaultNightMode(
                                             AppCompatDelegate
