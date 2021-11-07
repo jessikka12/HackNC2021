@@ -10,21 +10,18 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.bettergame.R;
+
+import com.example.hacknc2021.R;
 
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     static class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView iconImageView;
         TextView titleTextView;
-        TextView amountTextView;
 
         ViewHolder(final View itemView){
             super(itemView);
-            iconImageView = itemView.findViewById(R.id.listIcon);
             titleTextView = itemView.findViewById(R.id.listTitle);
-            amountTextView = itemView.findViewById(R.id.listAmount);
         }
     }
 
@@ -47,17 +44,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ListItem listItem = listItems.get(position);
-        //sets icon
-        ImageView iconImageView = holder.iconImageView;
-        iconImageView.setImageResource(listItem._icon);
         //sets title
         TextView nameTextView = holder.titleTextView;
         nameTextView.setText(listItem._title);
-        //sets amount
-        TextView amountTextView = holder.amountTextView;
-        if (listItem._amount > 0){
-            amountTextView.setText(listItem._amount + "");
-        }
     }
 
     @Override

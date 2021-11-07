@@ -4,7 +4,7 @@ import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.bettergame.R;
+import com.example.hacknc2021.R;
 
 import org.jetbrains.annotations.NotNull;
 
