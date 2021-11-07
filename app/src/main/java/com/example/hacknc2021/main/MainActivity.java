@@ -34,15 +34,24 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         searchList.setAdapter(new ListAdapter(all));
         searchList.setLayoutManager(new LinearLayoutManager(this));
 
+        Boolean switchState = day_night_mode.isChecked();
+
         day_night_mode.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view)
                     {
-                        AppCompatDelegate
-                                .setDefaultNightMode(
-                                        AppCompatDelegate
-                                                .MODE_NIGHT_YES);
+                        if (day_night_mode.isChecked()) {
+                            AppCompatDelegate
+                                    .setDefaultNightMode(
+                                            AppCompatDelegate
+                                                    .MODE_NIGHT_YES);}
+                        else {
+                            AppCompatDelegate
+                                    .setDefaultNightMode(
+                                            AppCompatDelegate
+                                                    .MODE_NIGHT_NO);
+                        }
                     }
                 });
     }
