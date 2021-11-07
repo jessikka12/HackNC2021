@@ -18,11 +18,15 @@ public class ListItem {
     /* creating listItems used in ListAdapter */
 
     public static List<ListItem> createList(List<String> list) {
-        List<ListItem> listItems = new LinkedList<>();
-        for (String item:list) {
-            listItems.add(new ListItem(item));
+        if (!list.isEmpty()) {
+            List<ListItem> listItems = new LinkedList<>();
+            for (String item : list) {
+                listItems.add(new ListItem(item));
+            }
+            return listItems;
+        } else {
+            return new LinkedList<>();
         }
-        return listItems;
     }
 
     public static List<ListItem> createSearchList() {

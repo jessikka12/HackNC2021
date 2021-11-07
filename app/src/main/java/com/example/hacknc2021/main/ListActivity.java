@@ -16,17 +16,17 @@ import java.util.List;
 public class ListActivity extends AppCompatActivity {
 
     public static List<String> subscriptions = new LinkedList<>();
-    RecyclerView subList;
+    public RecyclerView subList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-//        subList.findViewById(R.id.subscriptionList);
-//
-//        List<ListItem> subs = ListItem.createList(subscriptions);
-//        subList.setAdapter(new ListAdapter(subs));
-//        subList.setLayoutManager(new LinearLayoutManager(this));
+        subList = findViewById(R.id.subscriptionList);
+
+        List<ListItem> subs = ListItem.createList(subscriptions);
+        subList.setAdapter(new ListAdapter(subs));
+        subList.setLayoutManager(new LinearLayoutManager(this));
 
     }
 }
