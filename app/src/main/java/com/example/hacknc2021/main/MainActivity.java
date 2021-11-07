@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     SearchView searchBar;
     RecyclerView searchList;
+    private Switch day_night_mode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +44,14 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                     public void onClick(View view)
                     {
                         if (day_night_mode.isChecked()) {
+                            day_night_mode.setText("DAY");
                             AppCompatDelegate
                                     .setDefaultNightMode(
                                             AppCompatDelegate
-                                                    .MODE_NIGHT_YES);}
+                                                    .MODE_NIGHT_YES);
+                        }
                         else {
+                            day_night_mode.setText("NIGHT");
                             AppCompatDelegate
                                     .setDefaultNightMode(
                                             AppCompatDelegate
@@ -56,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 });
     }
 
-    private Switch day_night_mode;
 
 
     @Override
