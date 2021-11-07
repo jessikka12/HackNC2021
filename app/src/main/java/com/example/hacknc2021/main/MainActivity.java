@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
 import android.widget.Switch;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     SearchView searchBar;
     RecyclerView searchList;
-    private Switch day_night_mode;
+    private Switch day_night_mode2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,27 +28,27 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         setContentView(R.layout.activity_main);
         searchBar = findViewById(R.id.searchBar);
         searchList = findViewById(R.id.searchList);
-        day_night_mode = findViewById(R.id.day_night_mode);
+        day_night_mode2 = findViewById(R.id.day_night_mode2);
 
         searchBar.setOnQueryTextListener(this);
         List<ListItem> all = ListItem.createSearchList();
         searchList.setAdapter(new ListAdapter(all));
         searchList.setLayoutManager(new LinearLayoutManager(this));
 
-        day_night_mode.setOnClickListener(
+        day_night_mode2.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view)
                     {
-                        if (day_night_mode.isChecked()) {
-                            day_night_mode.setText("DAY");
+                        if (day_night_mode2.isChecked()) {
+                            day_night_mode2.setText("DAY");
                             AppCompatDelegate
                                     .setDefaultNightMode(
                                             AppCompatDelegate
                                                     .MODE_NIGHT_YES);
                         }
                         else {
-                            day_night_mode.setText("NIGHT");
+                            day_night_mode2.setText("NIGHT");
                             AppCompatDelegate
                                     .setDefaultNightMode(
                                             AppCompatDelegate

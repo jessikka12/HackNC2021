@@ -8,15 +8,17 @@
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar2"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        android:layout_width="499dp"
-        android:layout_height="107dp"
+        android:layout_width="476dp"
+        android:layout_height="64dp"
         android:layout_gravity="bottom"
+        android:layout_marginTop="2dp"
         android:layout_marginBottom="4dp"
         app:backgroundTint="@color/indigo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscriptionList"
         tools:ignore="BottomAppBar" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -25,13 +27,19 @@
         android:layout_height="776dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomAppBar2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/plusButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="183dp"
         android:layout_marginBottom="36dp"
         android:clickable="true"
         android:cropToPadding="false"
@@ -40,10 +48,32 @@
         app:backgroundTint="@color/lavender"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bottomAppBar2"
+        app:layout_constraintVertical_bias="0.785"
         app:rippleColor="@color/indigo"
         app:srcCompat="@android:drawable/ic_input_add"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo"
+        android:focusable="true" />
+
+    <Switch
+        android:id="@+id/day_night_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="19dp"
+        android:minHeight="48dp"
+        android:text="@string/day"
+        android:textColor="@color/lavender"
+        android:textColorHighlight="@color/lavender"
+        android:textColorHint="@color/lavender"
+        android:textColorLink="@color/lavender"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar2"
+        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar2"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscriptionList"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
