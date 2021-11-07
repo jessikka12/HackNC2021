@@ -2,13 +2,13 @@
     <!-- Base application theme. -->
     <style name="Theme.HackNC2021" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/emerald</item>
-        <item name="colorPrimaryVariant">@color/c1_gold</item>
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryVariant">@color/gold</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/emerald</item>
-        <item name="colorSecondaryVariant">@color/c2_brown</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/gold</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

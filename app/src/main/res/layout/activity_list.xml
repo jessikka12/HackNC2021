@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +8,11 @@
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar2"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="499dp"
+        android:layout_height="107dp"
         android:layout_gravity="bottom"
         android:layout_marginBottom="4dp"
+        app:backgroundTint="@color/indigo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,25 +21,29 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/subscriptionList"
-        android:layout_width="match_parent"
-        android:layout_height="669dp"
+        android:layout_width="488dp"
+        android:layout_height="776dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomAppBar2"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/plusButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="36dp"
         android:clickable="true"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        app:backgroundTint="@color/c1_gold"
+        android:cropToPadding="false"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:backgroundTint="@color/lavender"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar2"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/bottomAppBar2"
-        app:rippleColor="@color/emerald"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar2"
+        app:rippleColor="@color/indigo"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

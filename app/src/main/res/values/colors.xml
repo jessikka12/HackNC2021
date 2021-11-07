@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="c1_gold">#FFCC33</color>
-    <color name="grey">#4A4848</color>
-    <color name="black">#000000</color>
-    <color name="emerald">#092C0A</color>
-    <color name="teal_200">#092C0A</color>
-    <color name="c2_brown">#33241D</color>
+
+// day colors
+    <color name="indigo">#F51A025C</color>
+    <color name="lavender">#C6BAE6</color>
     <color name="white">#FFFFFF</color>
+
+// night colors
+    <color name="grey">#2C2A29</color>
+    <color name="gold">#DAC817</color>
+
+
 </resources>
