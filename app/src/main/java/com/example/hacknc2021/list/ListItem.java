@@ -1,15 +1,7 @@
 package com.example.hacknc2021.list;
 
-import android.content.SharedPreferences;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 
 public class ListItem {
 
@@ -25,7 +17,15 @@ public class ListItem {
 
     /* creating listItems used in ListAdapter */
 
-    public static List<ListItem> createList() {
+    public static List<ListItem> createList(List<String> list) {
+        List<ListItem> listItems = new LinkedList<>();
+        for (String item:list) {
+            listItems.add(new ListItem(item));
+        }
+        return listItems;
+    }
+
+    public static List<ListItem> createSearchList() {
         return new LinkedList<>();
     }
 }

@@ -22,6 +22,10 @@
             android:name=".main.MainActivity"
             android:label="@string/app_title">
         </activity>
+        <activity
+            android:name=".main.ListActivity"
+            android:label="@string/app_title">
+        </activity>
     </application>
 
 </manifest>

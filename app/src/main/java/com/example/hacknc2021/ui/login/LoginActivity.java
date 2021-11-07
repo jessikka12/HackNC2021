@@ -24,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hacknc2021.R;
+import com.example.hacknc2021.main.ListActivity;
 import com.example.hacknc2021.main.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -112,9 +113,11 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
-                loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+
+
+//                loadingProgressBar.setVisibility(View.VISIBLE);
+//                loginViewModel.login(usernameEditText.getText().toString(),
+//                        passwordEditText.getText().toString());
 
                 Intent toList = new Intent(getApplicationContext(), ListActivity.class);
                 startActivity(toList);

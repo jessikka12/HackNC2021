@@ -20,6 +20,7 @@
         tools:ignore="BottomAppBar" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subscriptionList"
         android:layout_width="match_parent"
         android:layout_height="669dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomAppBar2"
