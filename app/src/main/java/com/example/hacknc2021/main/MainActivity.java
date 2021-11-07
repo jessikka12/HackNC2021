@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         searchList.setAdapter(new ListAdapter(all));
         searchList.setLayoutManager(new LinearLayoutManager(this));
 
-        Boolean switchState = day_night_mode.isChecked();
-
         day_night_mode.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
